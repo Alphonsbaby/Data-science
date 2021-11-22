@@ -1,9 +1,7 @@
-def getMissingNo(A):
-    n = len(A)
-    total = (n + 1) * (n + 2) / 2
-    sum_of_A = sum(A)
-    return total - sum_of_A
-
-A = [7,0,2]
-miss = getMissingNo(A)
-print(miss)
+def absent_digits(n):
+  all_nums = set([0,1,2,3,4,5,6,7,8,9])
+  n = set([int(i) for i in n])
+  n = n.symmetric_difference(all_nums)
+  n = sorted(n)
+  return n
+print(absent_digits([9,8,3,2,2,0,9,7,6,3]))
