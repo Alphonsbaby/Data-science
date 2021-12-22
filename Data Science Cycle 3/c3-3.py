@@ -3,7 +3,7 @@ import numpy as np
 
 
 plt.title("Sales Data")
-plt.xlabel("Months of Year")
+plt.xlabel("Months of Year" ,size=18)
 plt.ylabel("Sale of Food")
 x = np.array(['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'])
 
